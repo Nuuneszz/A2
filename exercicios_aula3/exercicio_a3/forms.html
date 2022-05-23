@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Formulario</title>
+    </head>
+<body>
+<!--Criando o Formulario-->
+    <form method="get" action="">
+        <fieldset>
+            <legend>Dados do Paciente</legend>
+
+            <strong>Nome do Paciente:</strong>
+            <input type="text" name="nometxt" autofocus required><br>
+
+            <strong>Registro Hospitalar:</strong>
+            <input type="number" name="reg" required><br>
+
+            <strong>Data de inclusão:</strong>
+            <input type="date" name="datainc"><br>
+
+            <strong>Data de nascimento:</strong>
+            <input type="date" name="datanasc"><br>
+
+            <stong>Email:</stong>
+            <input type="email" name="emailtxt" required><br>
+
+            <strong>Gênero:</strong><br>
+            <input type="radio" name="genero" value="1">Masculino<br>
+            <input type="radio" name="genero" value="2">Feminino<br>
+
+            <strong>Raça Declarada:</strong><br>
+            <select name="raca">
+                <option values=""></option>
+                <option values="raca1">Branca</option>
+                <option values="raca2">Negra</option>
+                <option values="raca3">Parda</option>
+                <option values="raca4">Amarela</option>
+                <option values="raca5">Indigena</option>
+                <option values="raca6">Desconhecida</option>
+            </select>
+
+            <strong>Como ficou sabendo do estudo:</strong><br>
+            <input type="checkbox" name="checktxt" value="e1">Convidado<br>
+            <input type="checkbox" name="checktxt" value="e2">Internet<br>
+            <input type="checkbox" name="checktxt" value="e3">Amigos<br>
+            <input type="checkbox" name="checktxt" value="e4">Familiares<br>
+            <input type="checkbox" name="checktxt" value="e5">Outros<br>
+
+            <button>Enviar</button>
+        </fieldset>
+    </form>
+</body>
+</html>
